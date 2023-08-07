@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/2971874410.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <table class="notes-table" id="notesTable">
+
+    </table>
+
+    <table class="notes-table" id="categoriesCountsTable">
+        
+    </table>
+
+    <table class="notes-table" id="archivedNotesTable">
+
+    </table>
+
+    <button class="notes__add" id="button" type="button">Add Note</button>
+
+    <div class="popup-box" id="popupBox">
+        <div class="popup">
+            <div class="content">
+                <header>
+                <p></p>
+                <i class="uil uil-times"></i>
+                </header>
+                <form action="#">
+                <div class="row title">
+                    <label>Name</label>
+                    <input type="text" spellcheck="false" id="nameInput">
+                </div>
+                <div class="row description">
+                    <label>Content</label>
+                    <textarea id="contentInput" spellcheck="false"></textarea>
+                </div>
+                <button id="editButton">Edit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
