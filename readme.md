@@ -1,0 +1,2 @@
+The project works via Visual Studio Code (the project is created there and then "Open with live server" is clicked).
+The application may not work first time, but then it performs the function of adding a note to the table.
