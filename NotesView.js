@@ -68,6 +68,15 @@ export default class NotesView {
             archive.innerHTML = "<i class='fas fa-archive'></i>";
             let deleteTableRow = row.insertCell(7);
             deleteTableRow.innerHTML = "<i class='fas fa-trash'></i>";
+            deleteTableRow.addEventListener("click", () => {
+                // alert("cell clicked");
+                // get cell row number - ?
+                let deleteTableRowRowIndex = row.rowIndex;
+                this.notesTable.deleteRow(deleteTableRowRowIndex - 1);
+                this.onNoteDelete(deleteTableRowRowIndex - 1);
+                console.log(deleteTableRowRowIndex - 1);
+            });
+            // пока что удаляем без вопроса с меню выбора
         }
     }
 

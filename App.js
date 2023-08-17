@@ -53,8 +53,10 @@ export default class App {
                 this.notes.push(note);
                 this._refreshNotes();
             },
-            onNoteDelete: id => {
-                this.notes = this.notes.filter();
+            onNoteDelete: number => {
+                // this.notes = this.notes.filter();
+                this.notes.splice(number, 1);
+                this._refreshNotes();
             },
             onNoteEdit: () => {
 
